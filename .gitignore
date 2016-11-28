@@ -9,9 +9,10 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+config/database.yml
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-!/config/database.yml
+
 # Ignore Byebug command history file.
 .byebug_history
