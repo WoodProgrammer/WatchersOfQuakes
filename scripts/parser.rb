@@ -21,9 +21,13 @@ class Quake
       main_file.close
     end#end_of_arrangment.
   end
+
 end
 
 fname="helo.txt"
+fname2="quake_data"
 fops = File.open(fname,"w")
 fops.print system("curl http://www.koeri.boun.edu.tr/scripts/lst6.asp > #{fname}")
 Quake.arrangement(fname)#singletone
+reg=DB.new
+reg.look_date(fname2)

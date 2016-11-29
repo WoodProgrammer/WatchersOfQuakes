@@ -1,5 +1,12 @@
+
 class DB
-  module regex_on_db
-    
+  def look_date(fname)
+    date_file=File.open(fname,"r+")
+    date_file.each do |line|
+      puts line[0,line.length-119]
+      puts line[21,line.length-130]
+      puts "----------------------"
   end
 end
+end
+#REVIZE ERROR.
