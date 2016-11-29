@@ -7,6 +7,7 @@ class DB
       puts line[21,line.length-130]
       puts "----------------------"
   end
+  date_file.close
 end
 end
 #REVIZE ERROR.
