@@ -3,12 +3,15 @@ require 'date'
 class DB
   def look_date(fname)
     client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
+    client.query("DELETE FROM quakes")
     date_file=File.open(fname,"r+")
+
     date_file.each do |line|
     if line.include?("REVIZE01") || line.include?("REVIZE02") || line.include?("REVIZE03")
     else
       begin
-        client.query("INSERT INTO quakes(date,longitude,latitude) VALUES('#{line[0,line.length-119]}',12.2,12.2)")
+
+        client.query("INSERT INTO quakes(date,longitude,latitude,place) VALUES('#{line[0,line.length-119]}',#{line[31,line.length-116]},#{line[21,line.length-120]},'#{line[70,line.length-95]}')")
       rescue
         puts "SOME REGEX ERROR"
       end

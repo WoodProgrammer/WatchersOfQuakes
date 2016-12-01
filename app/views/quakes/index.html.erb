@@ -1,0 +1,28 @@
+<h1>Hello System.</h1>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Bungee');
+  #dep{
+    color: white;
+    font-size: 30px;
+    font-family: 'Bungee', cursive;
+  }
+  #dep_info{
+    font-family: 'Bungee', cursive;
+    background-color: green;
+  }
+</style>
+<%id=0%>
+<%@x.each do |dep|%>
+  <div id="dep_info">
+    <p id ="dep"><%=dep.date%></p>
+    <p id ="dep"><%=dep.latitude%></p>
+    <p id ="dep"><%=dep.longitude%></p>
+    <p id ="dep"><%=dep.place%></p>
+
+  </div>
+  <%id+=1%>
+  <%if id==10%>
+    <%break%>
+  <%end%>
+
+<%end%>

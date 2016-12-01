@@ -2,7 +2,7 @@ require_relative "db"
 class Quake
   class <<self
     def arrangement(x_files)
-      temp_file=File.open(x_files,"r")
+      temp_file=File.open(x_files,"rb")
       main_file=File.open("quake_data","w")
       i=0
       line_counter = 0
@@ -11,7 +11,7 @@ class Quake
           i+=1
         end
         if i==1
-          if line_counter >= 8
+          if line_counter >= 7
             main_file.puts line
           end
         line_counter += 1
