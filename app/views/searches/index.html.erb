@@ -1,0 +1,18 @@
+<STYLE>
+  h1{
+    color:red;
+  }
+</STYLE>
+<h1>#QUAKES_SEARCH_SYSTEM</h1>
+
+<%= form_tag(shows_url, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+<%= submit_tag "Search" %>
+<% end %>
+
+
+<% if @searched_quake.present? %>
+  <%= render @searched_quake %>
+<% else %>
+  <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+<% end %>
