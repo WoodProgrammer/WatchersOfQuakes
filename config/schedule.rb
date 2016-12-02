@@ -15,7 +15,7 @@ set :output, {:error => '~/Desktop/watchers_of_quakes_db.error.log', :standard =
 # end
 #
  every 1.minute do
-    command "ruby /Users/emirozbir/Desktop/watchers_of_quakes/scripts/parser.rb"
+    command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/parser.rb"
  end
 
 # Learn more: http://github.com/javan/whenever
