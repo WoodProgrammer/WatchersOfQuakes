@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  distance: 1.5
+  force: 1.5
+
+two:
+  city: MyString
+  distance: 1.5
+  force: 1.5

@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161202220610) do
+ActiveRecord::Schema.define(version: 20161204204926) do
 
   create_table "cities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "city_name"
+  end
+
+  create_table "distances", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "city"
+    t.float    "distance",   limit: 24
+    t.float    "force",      limit: 24
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "quakes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -21,12 +29,14 @@ ActiveRecord::Schema.define(version: 20161202220610) do
     t.float  "latitude",  limit: 24
     t.float  "longitude", limit: 24
     t.string "place"
+    t.float  "siddet",    limit: 24
+    t.string "city"
   end
 
-  create_table "sehir", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "sehir_isim"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "sehirs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "sehir_isim"
+    t.float  "lat",        limit: 24
+    t.float  "lon",        limit: 24
   end
 
 end

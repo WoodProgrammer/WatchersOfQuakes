@@ -1,0 +1,4 @@
+class Distance < ApplicationRecord
+  
+
+end
