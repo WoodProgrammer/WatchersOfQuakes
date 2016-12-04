@@ -1,10 +1,8 @@
 require 'mysql2'
 
 class City_Detection
-  @x="SEA OR FOREIGN COUNTRY"
 class <<self
   def city_detector
-
       client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
       @place=client.query("SELECT place FROM quakes")
       @city=client.query("SELECT sehir_isim FROM sehirs")
@@ -14,7 +12,7 @@ class <<self
               client.query("update quakes set city='#{city["sehir_isim"]}' where place LIKE '%#{city["sehir_isim"]}%'")
               next
           else
-            client.query("update quakes set city='#{@x}' where place LIKE '%#{city["sehir_isim"]}%'")
+            
           end
         end
       end

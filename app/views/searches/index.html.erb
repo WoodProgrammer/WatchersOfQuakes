@@ -1,12 +1,45 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <STYLE>
-  h1{
-    color:red;
-  }
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+#search_info{
+    background-color: rgb(244, 197, 66);
+    font-family: 'Bungee', cursive;
+
+}
+.form-control input-md{
+  color:red;
+}
+h1{
+    text-align: center;
+}
+.btn3d.btn-white:active, .btn3d.btn-white.active {
+    color: #666666;
+    box-shadow:2 3 4 0px #ebebeb inset, 0 0 0 1px rgba(1,1,2,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+    background-color:#666;
+    position: relative;
+}
+#submit_tag{
+  text-align: center;
+}
+#submit:active{
+}
+#select_tag_city{
+
+
+}
 </STYLE>
 <h1>#QUAKES_SEARCH_SYSTEM</h1>
-
-<%= form_tag(shows_url, :method => "get", id: "search-form") do %>
-<%= select_tag :city_name,options_for_select(@cities),:include_blank=>true%>
-
-<%= submit_tag "Search" %>
-<% end %>
+  <%= form_tag(shows_url, :method => "get", id: "search-form") do %>
+  <div id="select_tag_city">
+    
+    <%= select_tag :city_name,options_for_select(@cities,id:"radius"),:class=>"form-control input-md",:include_blank=>true%>
+  </div>
+  <br>
+  <div id="submit_tag">
+    <%= submit_tag "Search",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
+  </div>
+  <% end %>
+<p style="font-size:40px;margin-left:7.7em;margin-top:20px;"><%=@artist_data.id%>| QUAKE HAS BEEN ...</p>

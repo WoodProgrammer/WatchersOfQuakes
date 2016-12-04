@@ -86,6 +86,8 @@ trueL>
                                                         Büyüklük
 Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer                                             Çözüm Niteliði
 ---------- --------  --------  -------   ----------    ------------    --------------                                  --------------
+2016.12.04 14:09:03  34.7615   28.6625        8.2      -.-  2.6  -.-   AKDENIZ                                           Ýlksel
+2016.12.04 14:03:18  38.1437   26.2925       10.7      -.-  2.5  -.-   CESME ACIKLARI-IZMIR (EGE DENIZI)                 Ýlksel
 2016.12.04 11:21:57  40.0032   43.0115        1.8      -.-  2.6  -.-   EVYAPAN-KAGIZMAN (KARS)                           Ýlksel
 2016.12.04 11:17:12  36.6858   36.8173        3.9      -.-  2.1  -.-   SAATLI-(KILIS)                                    Ýlksel
 2016.12.04 11:15:28  39.0222   26.5338        7.3      -.-  2.3  -.-   MIDILLI ADASI (EGE DENIZI)                        Ýlksel
@@ -2084,8 +2086,6 @@ Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer      
 2016.10.18 12:01:35  40.5005   31.6075        0.0      -.-  2.3  -.-   KORUCUK-SEBEN (BOLU)                              Ýlksel
 2016.10.18 11:15:08  39.6550   29.4375        0.0      -.-  2.1  -.-   YENIKOY-TAVSANLI (KUTAHYA)                        Ýlksel
 2016.10.18 09:21:41  40.1835   31.4945       10.8      -.-  1.7  -.-   EYMIR-NALLIHAN (ANKARA)                           Ýlksel
-2016.10.18 06:24:29  38.9178   30.0248        5.4      -.-  2.1  -.-   ALLIOREN-DUMLUPINAR (KUTAHYA)                     Ýlksel
-2016.10.18 06:01:00  34.8300   22.9668       16.2      -.-  4.0  4.2   GIRIT ADASI (AKDENIZ)                             REVIZE01   (2016.10.18 06:01:08)
 
 </pre>
 
@@ -2117,4 +2117,4 @@ Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer      
 <hr color="#808080" width="50%" size="1">
 <p class=tiny align=center style="margin-top: 0; margin-bottom: 0"> 
 </BODY>
-</HTML><font size="3">Bu sayfa 20.06.2006 saat 18:30 dan bu yana </font><b><font color="#A31D1D" size="4">192.512.906</font></b><font size="3"> kez görüntülenmiþtir.</font><br>Yenileme zamaný: 04.12.2016 saat 12:39:46
+</HTML><font size="3">Bu sayfa 20.06.2006 saat 18:30 dan bu yana </font><b><font color="#A31D1D" size="4">192.513.903</font></b><font size="3"> kez görüntülenmiþtir.</font><br>Yenileme zamaný: 04.12.2016 saat 14:11:05
