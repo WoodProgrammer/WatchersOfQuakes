@@ -9,9 +9,8 @@
 </style>
 <%@search.each do |searched_data|%>
   <div id = "search_info">
-    <p><%=searched_data.place%></p>
-    <p><%=searched_data.latitude%></p>
-    <p><%=searched_data.longitude%></p>
-    <p><%=searched_data.siddet%></p>
+    <p><%=searched_data.quake_place%></p>
+    <p><%=searched_data.distance%></p>
+
   </div>
 <%end%>
