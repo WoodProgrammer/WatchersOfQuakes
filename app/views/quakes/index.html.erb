@@ -14,10 +14,12 @@
 <%id=0%>
 <%@x.each do |dep|%>
   <div id="dep_info">
-    <p id ="dep"><%=dep.date%></p>
-    <p id ="dep"><%=dep.latitude%></p>
-    <p id ="dep"><%=dep.longitude%></p>
-    <p id ="dep"><%=dep.place%></p>
+    <p id ="dep">Date:<%=dep.date%></p>
+    <p id ="dep">Latitude:<%=dep.latitude%></p>
+    <p id ="dep">Longitude:<%=dep.longitude%></p>
+    <p id ="dep">Place:<%=dep.place%></p>
+    <p id ="dep">Force:<%=dep.siddet%></p>
+    <p id ="dep">CITY:<%=dep.city%></p>
 
   </div>
   <%id+=1%>

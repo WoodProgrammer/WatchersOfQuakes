@@ -11,7 +11,7 @@ class DB
     else
       begin
 
-        client.query("INSERT INTO quakes(date,longitude,latitude,place) VALUES('#{line[0,line.length-119]}',#{line[31,line.length-116]},#{line[21,line.length-120]},'#{line[70,line.length-95]}')")
+        client.query("INSERT INTO quakes(date,longitude,latitude,place,siddet) VALUES('#{line[0,line.length-119]}',#{line[31,line.length-116]},#{line[21,line.length-120]},'#{line[70,line.length-95]}',#{line[60,line.length-124]})")
       rescue
         puts "SOME REGEX ERROR"
       end
