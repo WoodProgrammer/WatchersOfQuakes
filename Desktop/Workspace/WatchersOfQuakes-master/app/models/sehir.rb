@@ -1,0 +1,2 @@
+class Sehir < ApplicationRecord
+end

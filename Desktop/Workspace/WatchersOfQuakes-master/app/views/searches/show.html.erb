@@ -1,0 +1,16 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+#search_info{
+    background-color: rgb(244, 197, 66);
+    font-family: 'Bungee', cursive;
+
+}
+</style>
+<%@search.each do |searched_data|%>
+  <div id = "search_info">
+    <p><%=searched_data.quake_place%></p>
+    <p><%=searched_data.distance%></p>
+
+  </div>
+<%end%>

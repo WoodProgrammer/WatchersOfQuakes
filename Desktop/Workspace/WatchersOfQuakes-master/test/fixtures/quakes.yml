@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-29
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  date: 2016-11-29
+  latitude: 1.5
+  longitude: 1.5
