@@ -10,6 +10,7 @@ class SearchesController < ApplicationController
   end
 
   def show
-    @search=Distance.search(params[:city_name])
+    @search=Distance.search(params[:city_name],params[:maximum_distance],params[:minimum_distance]).all
+
   end
 end

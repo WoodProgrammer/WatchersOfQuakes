@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :searches
   get 'search', to: "searches#index"
   get 'shows', to: "searches#show"
+  post 'shows', to: "searches#show"
 
   get 'searches/search'
   root 'quakes#index'

@@ -1,4 +1,6 @@
 
+
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -32,13 +34,109 @@ h1{
 }
 </STYLE>
 <h1>#QUAKES_SEARCH_SYSTEM</h1>
-  <%= form_tag(shows_url, :method => "get", id: "search-form") do %>
+  <%= form_tag(shows_url, :method => "post", id: "search-form") do %>
 <div class="select_tag_city">
     <%= select_tag :city_name,options_for_select(@cities,id:"radius"),:class=>"form-control input-md",:include_blank=>true%>
   </div>
-  <br>
+
+    <p>
+
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $(function() {
+           $( "#slider-6" ).slider({
+              range:true,
+              min: 0,
+              max: 1500,
+              values: [ 0, 15000 ],
+              start: function( event, ui ) {
+                 $( "#maximum_distance" )
+                    .val(ui.values[ 0 ] + ui.values[ 1 ] );
+              },
+              stop: function( event, ui ) {
+                 $( "#minimum_distance" )
+                    .val(ui.values[ 0 ] + ui.values[ 1 ] );
+              },
+              change: function( event, ui ) {
+                 $( "#changevalue" )
+                    .val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+              },
+              slide: function( event, ui ) {
+                 $( "#slidevalue" )
+                    .val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+              }
+          });
+        });
+        </script>
+      </head>
+      <body>
+
+        <div id="slider-6"></div>
+        <p>
+           <label for="maximum_distance"  id="label1">Maksimum Uzaklık:</label>
+           <div class="field">
+               <%=number_field_tag :maximum_distance,id:"maximum_distance"%>
+           </div>
+
+           <label for="minimum_distance" id="label2">Minimum  Uzaklık:</label>
+           <div class="field">
+
+               <%=number_field_tag :minimum_distance,id:"maximum_distance"%>
+           </div>
+           <style>
+           @import url('https://fonts.googleapis.com/css?family=Bungee');
+                #label1,#label2{
+                  border:0;
+                   color:black;
+                  font-weight:bold;
+                  font-family: 'Bungee', cursive;
+                  font-size: 20px;
+
+                }
+                #stopvalue{
+                    border:0;
+                    color:#b9cd6d;
+                    font-weight:bold;
+
+                }
+                #maximum_distance{
+                    border:0;
+                     color:black;
+                    font-weight:bold;
+                    font-family: 'Bungee', cursive;
+                    font-size: 30px;
+                }
+                #minimum_distance{
+                    border:0; color:#0000;
+                    font-weight:bold;
+                    font-family: 'Bungee', cursive;
+
+                    font-size: 30px;
+                }
+
+           </style>
+
+        </p><!--DATAYI INPUTTAN AL-->
+
+        <div class="field">
+
+            <%=number_field_tag :maximum_distance,id:"maximum_distance"%>
+        </div>
+
+        <div class="field">
+          <%=number_field_tag(:minimum_distance,id:"minimum_distance") %>
+         </div>
+      <div id="slider-range"></div>
+
+
+    <br>
   <div id="submit_tag">
     <%= submit_tag "Search",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
   </div>
   <% end %>
+
 <p style="font-size:40px;margin-left:7.7em;margin-top:20px;"><%=@artist_data.id%>_QUAKE HAS BEEN ı||I|ı|ı___</p>
