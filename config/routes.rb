@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'interactive/page'
+
   resources :searches
   get 'search', to: "searches#index"
   get 'shows', to: "searches#show"

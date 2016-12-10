@@ -3,6 +3,8 @@ class SearchesController < ApplicationController
     #@cities=Sehir.uniq.pluck(:sehir_isim)
     @cities=Distance.uniq.pluck(:city)
     @artist_data=Quake.last
+    @artist_data2=Quake.first
+
     @deneme=Distance.last
   end
   def search
