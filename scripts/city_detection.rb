@@ -12,7 +12,7 @@ class <<self
               client.query("update quakes set city='#{city["sehir_isim"]}' where place LIKE '%#{city["sehir_isim"]}%'")
               next
           else
-            
+
           end
         end
       end

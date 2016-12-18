@@ -1,6 +1,7 @@
 ##HAVERSINE FORMULA
 require "mysql2"
 dis_client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
+dis_client.query("DELETE FROM distances")
 
 R=6371##radius of the earth.
 def pow(x,y)
@@ -27,6 +28,6 @@ quakes_info.each do |quakes_info|
   city_info.each do |city_info|
     haversine_var=distance_finder(quakes_info['latitude'],quakes_info['longitude'],city_info['lat'],city_info['lon'])
     dis_client.query("INSERT INTO distances(city,distance,quake_place) VALUES('#{city_info['sehir_isim']}',#{haversine_var},'#{quakes_info['place']}')")
-    
+
   end
 end

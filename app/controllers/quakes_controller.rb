@@ -1,4 +1,5 @@
 class QuakesController < ApplicationController
+
 def index
     @x=Quake.all
     @quakes = Quake.all
