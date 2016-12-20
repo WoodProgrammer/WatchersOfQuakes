@@ -4,8 +4,9 @@ class DB
   def look_date(fname)
     client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
     client.query("DELETE FROM quakes")
-    date_file=File.open(fname,"r+")
 
+    date_file=File.open(fname,"r+")
+    id=0
     date_file.each do |line|
     if line.include?("REVIZE01") || line.include?("REVIZE02") || line.include?("REVIZE03")
     else

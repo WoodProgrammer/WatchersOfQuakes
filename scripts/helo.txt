@@ -86,6 +86,69 @@ trueL>
                                                         Büyüklük
 Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer                                             Çözüm Niteliði
 ---------- --------  --------  -------   ----------    ------------    --------------                                  --------------
+2016.12.20 12:36:16  39.7553   26.2598        0.0      -.-  1.5  -.-   ALADAG-EZINE (CANAKKALE)                          Ýlksel
+2016.12.20 12:27:27  37.2512   28.1937        0.0      -.-  1.9  -.-   PASAPINARI-(MUGLA)                                Ýlksel
+2016.12.20 12:03:39  39.6367   29.4682        0.0      -.-  2.0  -.-   TUNCBILEK-TAVSANLI (KUTAHYA)                      Ýlksel
+2016.12.20 11:57:18  34.8972   33.8040       77.3      -.-  1.7  -.-   AKDENIZ                                           REVIZE01   (2016.12.20 11:57:25)
+2016.12.20 11:41:42  35.4163   33.6000       12.8      -.-  2.2  -.-   KIBRIS-BESPARMAK                                  Ýlksel
+2016.12.20 11:21:43  39.6482   29.4140        0.0      -.-  1.9  -.-   KARAKAYA-TAVSANLI (KUTAHYA)                       Ýlksel
+2016.12.20 11:14:31  40.0890   31.6132       20.3      -.-  1.4  -.-   DAVUTOGLAN-NALLIHAN (ANKARA)                      Ýlksel
+2016.12.20 10:39:32  38.7170   38.0478        5.0      -.-  2.1  -.-   IPEKYOLU-HEKIMHAN (MALATYA)                       Ýlksel
+2016.12.20 10:23:13  39.2565   37.3270        5.0      -.-  2.1  -.-   KARANLIK-KANGAL (SIVAS)                           Ýlksel
+2016.12.20 09:47:06  38.9997   27.6792        8.8      -.-  2.6  -.-   ZEYTINLIOVA-AKHISAR (MANISA)                      Ýlksel
+2016.12.20 09:03:43  36.5657   26.9275      118.8      -.-  5.4  -.-   ONIKI ADALAR (AKDENIZ)                            REVIZE01   (2016.12.20 09:03:45)
+2016.12.20 08:49:55  35.3700   32.0235        7.6      -.-  3.3  3.5   AKDENIZ                                           Ýlksel
+2016.12.20 08:45:34  38.1030   27.9638       24.6      -.-  1.5  -.-   YEGENLI-TIRE (IZMIR)                              Ýlksel
+2016.12.20 08:19:16  35.4502   27.6658       18.3      -.-  2.7  -.-   AKDENIZ                                           Ýlksel
+2016.12.20 07:12:57  40.7620   28.7045        7.8      -.-  1.9  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.20 03:10:23  38.6748   27.9123        4.5      -.-  3.3  -.-   OZANCA-GOLMARMARA (MANISA)                        Ýlksel
+2016.12.20 03:06:08  38.6765   27.9143        4.4      -.-  3.2  -.-   OZANCA-GOLMARMARA (MANISA)                        Ýlksel
+2016.12.19 21:46:10  38.9327   27.7165        5.0      -.-  1.8  -.-   BALLICA-AKHISAR (MANISA)                          Ýlksel
+2016.12.19 20:47:33  38.9967   27.6748        5.3      -.-  2.7  -.-   ZEYTINLIOVA-AKHISAR (MANISA)                      Ýlksel
+2016.12.19 18:27:57  37.2370   28.1770        0.0      -.-  1.8  -.-   CAYBUKU-(MUGLA)                                   Ýlksel
+2016.12.19 17:17:08  37.0363   28.3360        0.0      -.-  2.0  -.-   AKCAPINAR-ULA (MUGLA)                             Ýlksel
+2016.12.19 17:10:23  41.1212   28.8982        0.0      -.-  1.3  -.-   SULTANGAZI (ISTANBUL)                             Ýlksel
+2016.12.19 15:55:08  39.9912   32.5815        5.0      -.-  2.4  -.-   SINCAN (ANKARA)                                   Ýlksel
+2016.12.19 15:41:42  40.7567   28.6728        8.4      -.-  2.4  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 15:24:55  38.4475   43.2087        2.2      -.-  1.8  -.-   EDREMIT (VAN)                                     Ýlksel
+2016.12.19 14:44:01  40.1583   42.6295        5.0      -.-  2.1  -.-   KARAKURT-SARIKAMIS (KARS)                         REVIZE01   (2016.12.19 14:44:01)
+2016.12.19 14:31:13  40.7687   28.6443        5.5      -.-  2.3  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 14:15:24  37.2408   28.1640        0.0      -.-  2.0  -.-   CAYBUKU-(MUGLA)                                   Ýlksel
+2016.12.19 14:12:09  35.7057   27.4225        6.2      -.-  2.5  -.-   AKDENIZ                                           Ýlksel
+2016.12.19 14:05:53  37.1930   27.8550        0.0      -.-  1.8  -.-   CAMKOY-MILAS (MUGLA)                              Ýlksel
+2016.12.19 13:40:46  38.3992   43.8237        3.7      -.-  3.0  -.-   CEVIZALAN-GURPINAR (VAN)                          Ýlksel
+2016.12.19 13:34:26  37.1583   27.8432        0.0      -.-  2.2  -.-   IKIZKOY-MILAS (MUGLA)                             Ýlksel
+2016.12.19 13:15:08  40.7340   28.7067       18.5      -.-  1.9  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 13:10:07  40.7685   28.7062        5.0      -.-  1.8  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 13:07:35  41.2925   28.7177        0.0      -.-  1.9  -.-   YENIKOY-ARNAVUTKOY (ISTANBUL)                     Ýlksel
+2016.12.19 12:41:41  36.9880   34.6378        0.0      -.-  1.7  -.-   SAHINPINARI-TOROSLAR (MERSIN)                     Ýlksel
+2016.12.19 12:38:27  37.2088   27.8690        0.0      -.-  1.9  -.-   KAYADERE-MILAS (MUGLA)                            Ýlksel
+2016.12.19 12:31:42  37.2278   31.6252        7.6      -.-  1.8  -.-   KUYUCAK-AKSEKI (ANTALYA)                          Ýlksel
+2016.12.19 12:19:37  40.7505   28.6912       13.9      -.-  2.2  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 12:04:03  40.6962   28.8447        5.5      -.-  2.1  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 11:54:01  36.5040   29.9025        0.0      -.-  1.8  -.-   CAMLIBEL-FINIKE (ANTALYA)                         Ýlksel
+2016.12.19 11:51:40  40.6447   39.9175       22.3      -.-  2.0  -.-   KAYAICI-ARAKLI (TRABZON)                          Ýlksel
+2016.12.19 11:38:01  39.5712   39.6773        5.0      -.-  1.4  -.-   TATLISU-(ERZINCAN)                                Ýlksel
+2016.12.19 11:21:10  40.2467   28.0263        8.3      -.-  2.1  -.-   YENISIGIRCI-BANDIRMA (BALIKESIR)                  Ýlksel
+2016.12.19 11:18:45  38.5773   39.1575        0.0      -.-  1.9  -.-   TADIM-(ELAZIG)                                    Ýlksel
+2016.12.19 11:06:40  40.7500   28.6785        8.9      -.-  2.1  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 10:51:53  40.1588   31.7642        1.0      -.-  2.2  -.-   CANTIRLI-BEYPAZARI (ANKARA)                       Ýlksel
+2016.12.19 10:15:00  38.9082   27.7028        6.1      -.-  2.8  -.-   BALLICA-AKHISAR (MANISA)                          Ýlksel
+2016.12.19 10:08:39  37.1880   37.2060        0.0      -.-  2.0  -.-   UCGOZE-SEHITKAMIL (GAZIANTEP)                     Ýlksel
+2016.12.19 09:22:53  40.7140   28.6812        6.4      -.-  2.3  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 09:13:17  37.6380   38.4378        4.2      -.-  2.0  -.-   DOGANCA-SAMSAT (ADIYAMAN)                         Ýlksel
+2016.12.19 07:53:25  36.6032   28.1725        9.1      -.-  1.8  -.-   BOZBURUN ACIKLARI-MUGLA (AKDENIZ)                 Ýlksel
+2016.12.19 07:10:17  37.0483   26.8683        5.2      -.-  2.6  -.-   ONIKI ADALAR (AKDENIZ)                            Ýlksel
+2016.12.19 05:11:55  40.7578   28.6988        8.2      -.-  1.8  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 04:33:34  38.4210   39.0747        8.8      -.-  3.2  3.4   SARITOSUN-(ELAZIG)                                REVIZE01   (2016.12.19 04:33:36)
+2016.12.19 04:30:50  39.7933   40.6388        5.6      -.-  1.9  -.-   EYUPOGLU-ASKALE (ERZURUM)                         Ýlksel
+2016.12.19 04:26:40  40.7230   28.6737        6.7      -.-  2.3  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 03:52:52  38.8035   38.1492       10.1      -.-  2.2  -.-   BALLIKAYA-HEKIMHAN (MALATYA)                      Ýlksel
+2016.12.19 03:40:40  39.8398   41.8495       15.4      -.-  2.5  -.-   TASLIYURT-PASINLER (ERZURUM)                      Ýlksel
+2016.12.19 03:40:05  40.7990   28.8653       19.6      -.-  1.9  -.-   MARMARA DENIZI                                    Ýlksel
+2016.12.19 02:47:10  38.8812   27.8407       10.4      -.-  2.2  -.-   RAHMIYE-AKHISAR (MANISA)                          Ýlksel
+2016.12.19 01:27:28  39.1608   28.3530        6.3      -.-  1.8  -.-   YUREGIL-SINDIRGI (BALIKESIR)                      Ýlksel
+2016.12.19 00:13:57  40.7480   28.6727        6.7      -.-  1.8  -.-   MARMARA DENIZI                                    Ýlksel
 2016.12.18 23:04:37  38.5715   40.8515        1.1      -.-  3.0  -.-   AGILLI-KULP (DIYARBAKIR)                          Ýlksel
 2016.12.18 21:45:18  40.7662   28.7002        9.7      -.-  2.0  -.-   MARMARA DENIZI                                    Ýlksel
 2016.12.18 21:44:34  40.7560   28.6883        7.9      -.-  2.2  -.-   MARMARA DENIZI                                    Ýlksel
@@ -2023,69 +2086,6 @@ Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer      
 2016.11.04 00:34:40  39.1672   36.1313        8.5      -.-  2.1  -.-   HACIYUSUF-GEMEREK (SIVAS)                         Ýlksel
 2016.11.03 23:24:24  40.7825   34.3053        1.9      -.-  2.8  -.-   AHLATCIK-ISKILIP (CORUM)                          Ýlksel
 2016.11.03 22:51:03  40.2702   31.9667        5.0      -.-  1.9  -.-   KARACAOREN-BEYPAZARI (ANKARA)                     Ýlksel
-2016.11.03 20:15:17  39.6890   25.6513        5.3      -.-  2.5  -.-   EGE DENIZI                                        Ýlksel
-2016.11.03 19:34:26  37.1772   30.8840      103.0      -.-  2.3  -.-   KIRBAS-SERIK (ANTALYA)                            Ýlksel
-2016.11.03 16:32:10  39.6772   39.7692        0.0      -.-  1.9  -.-   PISKIDAG-UZUMLU (ERZINCAN)                        Ýlksel
-2016.11.03 15:13:14  39.7490   32.6713        0.0      -.-  1.9  -.-   GOLBASI (ANKARA)                                  Ýlksel
-2016.11.03 14:52:42  39.8158   32.6065        0.0      -.-  1.6  -.-   ETIMESGUT (ANKARA)                                Ýlksel
-2016.11.03 14:46:57  37.1467   27.8377        0.0      -.-  1.5  -.-   PINARARASI-MILAS (MUGLA)                          Ýlksel
-2016.11.03 13:31:07  37.0022   28.2370        2.4      -.-  1.3  -.-   GOKOVA KORFEZI (AKDENIZ)                          Ýlksel
-2016.11.03 13:13:31  40.6767   37.2137       16.5      -.-  2.1  -.-   BOZCAARMUT-NIKSAR (TOKAT)                         Ýlksel
-2016.11.03 13:01:58  36.8688   27.6613        5.0      -.-  1.8  -.-   GOKOVA KORFEZI (AKDENIZ)                          Ýlksel
-2016.11.03 12:49:41  37.2815   31.8960        0.0      -.-  1.8  -.-   MADENLI-SEYDISEHIR (KONYA)                        Ýlksel
-2016.11.03 12:44:08  37.2678   31.8542        0.0      -.-  1.8  -.-   MADENLI-SEYDISEHIR (KONYA)                        Ýlksel
-2016.11.03 12:24:37  39.5847   29.4273        0.0      -.-  1.8  -.-   KAYAARASI-TAVSANLI (KUTAHYA)                      Ýlksel
-2016.11.03 12:20:19  37.1552   27.9405        0.0      -.-  1.5  -.-   KARACAAGAC-MILAS (MUGLA)                          Ýlksel
-2016.11.03 12:10:08  40.6725   26.5985        0.0      -.-  1.7  -.-   GOKCETEPE-KESAN (EDIRNE)                          Ýlksel
-2016.11.03 12:00:13  37.8613   34.7955        7.2      -.-  1.6  -.-   KILAVUZ-BOR (NIGDE)                               REVIZE01   (2016.11.03 12:00:13)
-2016.11.03 11:59:13  38.0075   27.5333       13.3      -.-  2.5  -.-   KUCUKKALE-TIRE (IZMIR)                            Ýlksel
-2016.11.03 11:52:21  37.1002   28.2082        5.0      -.-  1.7  -.-   DERINKUYU-(MUGLA)                                 Ýlksel
-2016.11.03 08:56:28  39.7315   30.4987        0.0      -.-  1.7  -.-   KARACASEHIR-ODUNPAZARI (ESKISEHIR)                Ýlksel
-2016.11.03 08:17:32  37.1277   28.3788        0.0      -.-  1.8  -.-   GULAGZI-(MUGLA)                                   Ýlksel
-2016.11.03 07:48:23  38.1803   34.2203        3.5      -.-  2.7  -.-   HELVADERE-(AKSARAY)                               REVIZE01   (2016.11.03 07:48:25)
-2016.11.03 07:29:20  40.6038   27.3283        5.3      -.-  1.7  -.-   MUREFTE ACIKLARI-TEKIRDAG (MARMARA DENIZI)        Ýlksel
-2016.11.03 06:28:22  40.7808   27.6723        5.5      -.-  1.8  -.-   MARMARA DENIZI                                    Ýlksel
-2016.11.03 05:57:40  39.2617   23.5117       10.1      -.-  2.9  -.-   YUNANISTAN                                        Ýlksel
-2016.11.03 05:23:45  39.6477   34.3943        1.5      -.-  1.7  -.-   CEPNI-CICEKDAGI (KIRSEHIR)                        Ýlksel
-2016.11.03 04:39:51  37.7198   36.0695       19.8      -.-  1.6  -.-   TOKMANAKLI-FEKE (ADANA)                           Ýlksel
-2016.11.03 03:46:51  37.8148   26.5290        3.7      -.-  2.5  -.-   SISAM ADASI (EGE DENIZI)                          REVIZE01   (2016.11.03 03:46:50)
-2016.11.03 03:44:49  40.1538   24.8782        9.8      -.-  2.5  -.-   EGE DENIZI                                        Ýlksel
-2016.11.03 02:21:12  37.9660   27.3830       12.4      -.-  1.9  -.-   SELCUK (IZMIR)                                    REVIZE02   (2016.11.03 02:21:12)
-2016.11.03 02:00:59  40.1590   31.7788        5.2      -.-  2.0  -.-   CANTIRLI-BEYPAZARI (ANKARA)                       Ýlksel
-2016.11.03 01:53:07  40.5720   43.6915        6.7      -.-  2.6  -.-   YALCINLAR-(KARS)                                  Ýlksel
-2016.11.03 01:47:40  38.4087   26.6745        9.7      -.-  2.5  -.-   IZMIR KORFEZI (EGE DENIZI)                        Ýlksel
-2016.11.03 01:04:59  38.7078   26.5008       15.6      -.-  1.9  -.-   BOZKOY-KARABURUN (IZMIR)                          Ýlksel
-2016.11.03 00:40:49  40.7865   34.2922        5.0      -.-  2.7  -.-   AHLATCIK-ISKILIP (CORUM)                          Ýlksel
-2016.11.03 00:24:05  40.7377   34.2928        5.0      -.-  1.9  -.-   CERKES-BAYAT (CORUM)                              Ýlksel
-2016.11.03 00:08:32  37.2005   30.8792      100.2      -.-  2.8  -.-   KIRBAS-SERIK (ANTALYA)                            Ýlksel
-2016.11.02 23:16:22  38.5663   31.0400        6.8      -.-  1.8  -.-   CAY (AFYONKARAHISAR)                              Ýlksel
-2016.11.02 23:01:55  40.5995   27.3063        5.5      -.-  2.1  -.-   MUREFTE ACIKLARI-TEKIRDAG (MARMARA DENIZI)        Ýlksel
-2016.11.02 22:56:54  40.5838   27.3167       10.3      -.-  2.5  -.-   MUREFTE ACIKLARI-TEKIRDAG (MARMARA DENIZI)        Ýlksel
-2016.11.02 22:25:09  38.1460   38.6520        5.0      -.-  1.9  -.-   BASMEZRA-PUTURGE (MALATYA)                        Ýlksel
-2016.11.02 22:12:51  39.5308   39.9768       16.7      -.-  2.3  -.-   YARBASI-PULUMUR (TUNCELI)                         Ýlksel
-2016.11.02 20:42:11  37.2593   30.8420      100.2      -.-  2.0  -.-   KARGI-BUCAK (BURDUR)                              Ýlksel
-2016.11.02 20:21:59  38.7147   43.4565        5.0      -.-  2.3  -.-   YEMLICE-(VAN)                                     Ýlksel
-2016.11.02 20:16:28  37.3333   36.0602        1.2      -.-  2.2  -.-   KUMBET-KADIRLI (OSMANIYE)                         Ýlksel
-2016.11.02 19:54:00  37.4562   36.0422        7.2      -.-  1.9  -.-   ARMAGANLI-SUMBAS (OSMANIYE)                       Ýlksel
-2016.11.02 18:15:27  40.7450   34.2840        5.4      -.-  2.6  -.-   CERKES-BAYAT (CORUM)                              Ýlksel
-2016.11.02 18:14:19  38.7165   26.5517       14.5      -.-  1.7  -.-   IZMIR KORFEZI (EGE DENIZI)                        Ýlksel
-2016.11.02 18:11:07  41.8533   26.8357        7.2      -.-  2.2  -.-   SARIDANISMENT-LALAPASA (EDIRNE)                   Ýlksel
-2016.11.02 18:07:47  37.2630   28.2732        0.0      -.-  1.8  -.-   SALIHPASALAR-(MUGLA)                              Ýlksel
-2016.11.02 17:52:54  38.6920   43.5548        5.0      -.-  3.6  -.-   KOCKOY-(VAN)                                      Ýlksel
-2016.11.02 15:29:50  36.5163   34.2075        0.0      -.-  1.8  -.-   KUMKUYU-ERDEMLI (MERSIN)                          Ýlksel
-2016.11.02 15:27:25  40.7547   34.3075        6.3      -.-  2.3  -.-   AHLATCIK-ISKILIP (CORUM)                          Ýlksel
-2016.11.02 15:20:14  40.7750   34.3012        5.0      -.-  2.4  -.-   AHLATCIK-ISKILIP (CORUM)                          Ýlksel
-2016.11.02 15:02:53  40.7698   34.2925        9.4      -.-  3.9  4.2   AHLATCIK-ISKILIP (CORUM)                          REVIZE02   (2016.11.02 15:02:54)
-2016.11.02 14:57:41  40.7532   34.3140        5.0      -.-  4.7  -.-   AHLATCIK-ISKILIP (CORUM)                          REVIZE01   (2016.11.02 14:57:43)
-2016.11.02 14:28:16  40.5668   30.9282        0.0      -.-  2.0  -.-   AKYOKUS-MUDURNU (BOLU)                            Ýlksel
-2016.11.02 13:39:56  39.6002   34.3575       23.6      -.-  2.0  -.-   HARMANPINAR-CICEKDAGI (KIRSEHIR)                  Ýlksel
-2016.11.02 13:26:27  38.5630   38.8408        2.8      -.-  2.2  -.-   BASKIL (ELAZIG)                                   Ýlksel
-2016.11.02 13:02:25  39.6262   30.6938       21.1      -.-  2.1  -.-   KIRAVDAN-ODUNPAZARI (ESKISEHIR)                   Ýlksel
-2016.11.02 12:58:33  39.6218   28.2968        5.0      -.-  2.0  -.-   AHMETOLEN-KEPSUT (BALIKESIR)                      Ýlksel
-2016.11.02 12:55:06  41.2532   28.6967        0.0      -.-  1.9  -.-   TAYAKADIN-ARNAVUTKOY (ISTANBUL)                   Ýlksel
-2016.11.02 12:54:16  41.2617   28.6848        0.0      -.-  2.1  -.-   TAYAKADIN-ARNAVUTKOY (ISTANBUL)                   Ýlksel
-2016.11.02 12:23:28  39.6165   29.3517        0.0      -.-  1.8  -.-   YENIKOY-TAVSANLI (KUTAHYA)                        Ýlksel
-2016.11.02 12:16:39  37.1368   27.8497        0.0      -.-  1.6  -.-   BAGDAMLARI-MILAS (MUGLA)                          Ýlksel
 
 </pre>
 
@@ -2117,4 +2117,4 @@ Tarih      Saat      Enlem(N)  Boylam(E) Derinlik(km)  MD   ML   Mw    Yer      
 <hr color="#808080" width="50%" size="1">
 <p class=tiny align=center style="margin-top: 0; margin-bottom: 0"> 
 </BODY>
-</HTML><font size="3">Bu sayfa 20.06.2006 saat 18:30 dan bu yana </font><b><font color="#A31D1D" size="4">192.758.469</font></b><font size="3"> kez görüntülenmiþtir.</font><br>Yenileme zamaný: 18.12.2016 saat 22:47:02
+</HTML><font size="3">Bu sayfa 20.06.2006 saat 18:30 dan bu yana </font><b><font color="#A31D1D" size="4">192.785.924</font></b><font size="3"> kez görüntülenmiþtir.</font><br>Yenileme zamaný: 20.12.2016 saat 12:25:02
