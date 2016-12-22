@@ -22,9 +22,8 @@ selector = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"a
 #end
 
 x="Mersin"
-file=open("#{x}","a")
+file=open("#{x}.csv","a")
 file.puts("date,count")
-file.puts("")
 data=selector.query("SELECT * FROM cities WHERE city_name LIKE '%#{x}%'")
 month.each do |month|
   data.each do |meta_data_city|
