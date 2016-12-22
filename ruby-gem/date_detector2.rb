@@ -21,10 +21,10 @@ selector = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"a
 #  end
 #end
 
-x="Mersin"
-file=open("#{x}.csv","a")
+
+file=open("/Users/emirozbir/Desktop/rubyT/javascripts/#{ARGV[0]}.csv","a")
 file.puts("date,count")
-data=selector.query("SELECT * FROM cities WHERE city_name LIKE '%#{x}%'")
+data=selector.query("SELECT * FROM cities WHERE city_name LIKE '%#{ARGV[0]}%'")
 month.each do |month|
   data.each do |meta_data_city|
     file.puts month.to_s+","+meta_data_city["#{month.downcase}"].to_s
