@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'interactive/page'
+  get 'interactive/hebele'
 
   resources :searches
   get 'search', to: "searches#index"
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   root 'quakes#index'
   get 'quakes/:id', to: "quakes#show"
   get 'quakes', to: "quakes#index"
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

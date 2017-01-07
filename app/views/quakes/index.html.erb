@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<h1 id="header_1">WATCHERSOFQUAKES.</h1>
 
 <p id="search_link"> <%=link_to "SEARCH",searches_path%></p>
 
@@ -13,12 +12,14 @@
   }
   #dep{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
   }
   #dep_info{
-    background-color: #9fa3a8;
+    background-color: black;
+    width: 400px;
   }
   #search_link{
+    margin-left: 40em;
 
   }
   body{
@@ -30,12 +31,10 @@
 <%id=0%>
 <%@x.each do |dep|%>
   <div id="dep_info">
-    <p id ="dep">Date:<%=dep.date%></p>
-    <p id ="dep">Latitude:<%=dep.latitude%></p>
-    <p id ="dep">Longitude:<%=dep.longitude%></p>
-    <p id ="dep">Place:<%=dep.place%></p>
-    <p id ="dep">Force:<%=dep.siddet%></p>
-    <p id ="dep">CITY:<%=dep.city%></p>
+    <p id ="dep">Tarih:<%=dep.date%></p>
+    <p id ="dep">Yer:<%=dep.place%></p>
+    <p id ="dep">Büyüklük:<%=dep.siddet%></p>
+    <p id ="dep">Şehir:<%=dep.city%></p>
 
   </div>
   <%id+=1%>

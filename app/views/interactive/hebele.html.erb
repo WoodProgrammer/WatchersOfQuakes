@@ -1,0 +1,5 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+<h1><%="#{@label.city} City QUAKE STATISTICS"%></h1>
+<%= line_chart @like_keyword.group_by_day(:date).count ,width: "800px", height: "500px" ,colors: ["#b00", "#666"],label: "Deprem Sayisi", xtitle: "Tarih",ytitle:"Deprem Sayısı",legend: "bottom"%>
+
+<%= area_chart @like_keyword.group_by_day(:date).maximum(:siddet),width: "800px", height: "500px" ,colors: ["#a11342", "white"],label: "Buyukluk", xtitle: "Tarih",ytitle:"Buyukluk",legend: "bottom" %>
