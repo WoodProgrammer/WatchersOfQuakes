@@ -1,5 +1,150 @@
-<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
-<h1><%="#{@label.city} City QUAKE STATISTICS"%></h1>
-<%= line_chart @like_keyword.group_by_day(:date).count ,width: "800px", height: "500px" ,colors: ["#b00", "#666"],label: "Deprem Sayisi", xtitle: "Tarih",ytitle:"Deprem Sayısı",legend: "bottom"%>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%= area_chart @like_keyword.group_by_day(:date).maximum(:siddet),width: "800px", height: "500px" ,colors: ["#a11342", "white"],label: "Buyukluk", xtitle: "Tarih",ytitle:"Buyukluk",legend: "bottom" %>
+<style>
+body{ margin-top:20px;}
+.glyphicon { margin-right:5px;}
+.rating .glyphicon {font-size: 10px;}
+.rating-num { margin-top:0px;font-size: 44px; }
+.progress { margin-bottom: 5px;}
+.progress-bar { text-align: left; }
+.rating-desc .col-md-3 {padding-right: 0px;}
+.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+.container{
+  margin-left: 0em;
+
+}
+.graph1{
+
+}
+.graph2{
+    margin-left: 50em;
+    margin-top: -35em;
+    margin-right: 12em;
+
+}
+#container2{
+  margin-left: 40em;
+  margin-top: -15em;
+
+
+}
+</style>
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
+
+<%i=0%>
+
+<%i2=0%>
+<%i3=0%>
+<%i4=0%>
+<%i5=0%>
+
+<%@like_keyword.each do |x|%>
+  <%i+=1%>
+  <%if x.siddet>=5%>
+    <%i5+=1%>
+  <%end%>
+  <%if x.siddet<=4&&x.siddet>3.1%>
+    <%i4+=1%>
+  <%end%>
+
+  <%if x.siddet<=3&&x.siddet>2.1%>
+    <%i3+=1%>
+  <%end%>
+  <%if x.siddet<=2&&x.siddet>1.0%>
+    <%i2+=1%>
+  <%end%>
+<%end%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 text-center">
+                      <h1 class="rating-num"><%="#{@label.city}"%></h1>
+                        <h1 class="rating-num">
+                            4.0</h1>
+                        <div class="rating">
+                            <span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
+                            </span><span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
+                            </span><span class="glyphicon glyphicon"></span>
+                        </div>
+                        <div>
+                            <span class="glyphicon glyphicon-globe"></span><%="#{i} Deprem"%>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-md-6">
+                        <div class="row rating-desc">
+                            <div class="col-xs-3 col-md-3 text-right">
+                                <span class="glyphicon glyphicon"></span>5
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                                <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:<%=i5%>%;">
+                                        <span class="sr-only"><%"#{i5}"%></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-md-3 text-right">
+                                <span class="glyphicon glyphicon"></span>4
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:<%=i4*10%>%">
+                                        <span class="sr-only"><%=i4%></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-md-3 text-right">
+                                <span class="glyphicon glyphicon"></span>3
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:<%= i3*10 %>%">
+                                        <span class="sr-only"><%=i3%></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-md-3 text-right">
+                                <span class="glyphicon glyphicon"></span>1 - 2
+                            </div>
+                            <div class="col-xs-8 col-md-9">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: <%= i2*10 %>%">
+                                        <span class="sr-only"><%="#{i2}"%></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="container2">
+    <br>
+	<div class="well">
+		<h1><span><%="#{@label.city}"%></span></h2>
+        <p>
+              <%="#{@label.city}"%>
+        </p>
+        <p>
+            the style colors I used are setup for .well so you might want to
+            setup different color rules.
+        </p>
+	</div>
+</div>
+
+<div class="graph1">
+<%= line_chart @like_keyword.group_by_day(:date).count ,width: "600px", height: "500px" ,colors: ["#b00", "#666"],label: "Deprem Sayisi", xtitle: "Tarih",ytitle:"Deprem Sayısı",legend: "bottom"%>
+</div>
+<div class="graph2">
+<%= area_chart @like_keyword.group_by_day(:date).maximum(:siddet),width: "720px", height: "500px" ,colors: ["#a11342", "white"],label: "Buyukluk", xtitle: "Tarih",ytitle:"Buyukluk",legend: "bottom" %>
+</div>

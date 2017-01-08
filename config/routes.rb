@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'interactive/page'
   get 'interactive/hebele'
+  get 'interactive/deneme'
 
   resources :searches
   get 'search', to: "searches#index"

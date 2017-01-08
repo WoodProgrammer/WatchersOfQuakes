@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <style>
   #selector{
-    margin-left: 90em;
 
   }
 
@@ -11,6 +10,7 @@
   <div id="selector">
     <%= select_tag :place,options_for_select(@cities,id:"city_shower"),:include_blank=>true%>
   </div>
+  <br>
   <%= submit_tag "Search",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
 
 <%end%>
