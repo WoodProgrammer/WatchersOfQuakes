@@ -43,6 +43,29 @@ body{
   background-repeat:no-repeat;
   background-size:cover;
 }
+.col-md-4{
+
+
+   position: absolute;
+   margin-top:-4em;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   margin: auto;
+}
+h1{
+  height: 43%;
+      text-align:center;
+      display:table;
+      width:100%;
+
+    }
+#buttons{
+  position: absolute;
+  margin-top: 3em;
+  margin-left: 40em;
+}
 </style>
 <div class="col-md-4">
 <div class="panel panel-default">
@@ -75,21 +98,14 @@ body{
 <div class="panel-footer"> <ul class="pagination pull-right" style="margin: 0px;"><li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a></li><li><a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a></li></ul><div class="clearfix"></div></div>
 </div>
 </div>
-</div>
-<style>
-  #buttons{
 
-  }
-</style>
 <h1 style="font-size:60px;">TÜRKİYE DEPREMLERİ</h1>
 
 <div id="buttons">
   <div class="btn-group">
     <%= link_to "ARAMA", searches_path, :class => "btn btn-default btn-lg btn-block btn-huge"%>
-
 </div>
 <div class="btn-group">
   <%= link_to "DATA ANALİZİ", interactive_page_path, :class => "btn btn-default btn-lg btn-block btn-huge"%>
-
 </div>
 </div>

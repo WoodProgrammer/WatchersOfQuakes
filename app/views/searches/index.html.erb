@@ -15,7 +15,7 @@
   color:red;
 }
 h1{
-    text-align: center;
+    text-align: left;
 }
 .btn3d.btn-white:active, .btn3d.btn-white.active {
     color: white;
@@ -23,16 +23,23 @@ h1{
     position: relative;
 }
 #submit_tag{
-  text-align: center;
+  text-align: left;
 }
 #submit:active{
 }
 .select_tag_city{
   width: 20em;
-  margin-left: 28em;
+  margin-left: 0em;
+}
+#slider-6{
+  width: 400px;
+}
+#search-form-pre{
+  vertical-align: right;
 }
 </STYLE>
-<h1>#QUAKES_SEARCH_SYSTEM</h1>
+<h1>QUAKES_SEARCH_SYSTEM</h1>
+<div id="search-form-pre">
   <%= form_tag(shows_url, :method => "post", id: "search-form") do %>
 <div class="select_tag_city">
     <%= select_tag :city_name,options_for_select(@cities,id:"radius"),:class=>"form-control input-md",:include_blank=>true%>
@@ -129,6 +136,4 @@ h1{
     <%= submit_tag "Search",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
   </div>
   <% end %>
-
-<p style="font-size:40px;margin-left:8em;margin-top:20px;">Since <%=@artist_data.date%></p>
-<p style="font-size:40px;margin-left:7.7em;margin-top:20px;"><%=@artist_data.id-@artist_data2.id%> QUAKE HAS BEEN ı||I|ı|ı___</p>
+</div>
