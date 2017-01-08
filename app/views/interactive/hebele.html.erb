@@ -24,7 +24,7 @@ body{ margin-top:20px;}
 }
 #container2{
   margin-left: 40em;
-  margin-top: -15em;
+  margin-top: -14em;
 
 
 }
@@ -55,23 +55,27 @@ body{ margin-top:20px;}
     <%i2+=1%>
   <%end%>
 <%end%>
+<%datas=[]%>
+<%t=0%>
+<%@like_keyword.each do |data|%>
+  <%datas.push(data.siddet)%>
+  <%t+=1%>
+<%end%>
 
+<div>
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-6">
             <div class="well well-sm">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 text-center">
-                      <h1 class="rating-num"><%="#{@label.city}"%></h1>
+                      <h1 class="rating-num"><%=@label.city%></h1>
                         <h1 class="rating-num">
-                            4.0</h1>
+                            <%="#{i}"%></h1>
                         <div class="rating">
                             <span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
                             </span><span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
                             </span><span class="glyphicon glyphicon"></span>
-                        </div>
-                        <div>
-                            <span class="glyphicon glyphicon-globe"></span><%="#{i} Deprem"%>
                         </div>
                     </div>
                     <div class="col-xs-10 col-md-6">
@@ -131,17 +135,13 @@ body{ margin-top:20px;}
 <div class="container" id="container2">
     <br>
 	<div class="well">
-		<h1><span><%="#{@label.city}"%></span></h2>
+
         <p>
-              <%="#{@label.city}"%>
-        </p>
-        <p>
-            the style colors I used are setup for .well so you might want to
-            setup different color rules.
+            <H3 ><%="EN YÜKSEK DEPREM BÜYÜKLÜĞÜ #{datas.max} "%><H3>
         </p>
 	</div>
 </div>
-
+</div>
 <div class="graph1">
 <%= line_chart @like_keyword.group_by_day(:date).count ,width: "600px", height: "500px" ,colors: ["#b00", "#666"],label: "Deprem Sayisi", xtitle: "Tarih",ytitle:"Deprem Sayısı",legend: "bottom"%>
 </div>

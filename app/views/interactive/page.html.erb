@@ -1,22 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/i18n/defaults-*.min.js"></script>
+
 <html>
+
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <style>
-  @import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css")
+  @import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
   #selector{
-
   }
   body{
-    background-color:black;
-  }
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg/1920px-B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
   #search-statistics{
     margin-left: 40em;
     margin-top: 20em;
-
   }
   #dep-label{
-    color:gray;
+    color:white;
   }
 </style>
 <head>
@@ -25,11 +31,10 @@
   <h1 id="dep-label">DEPREM ANALİZLERİ</h1>
   <%= form_tag("http://localhost:3000/interactive/hebele", :method => "get", id: "search-form") do %>
       <div id="selector">
-        <%= select_tag :place,options_for_select(@cities,id:"city_shower"),:class=>"selectpicker",:include_blank=>true%>
+        <%= select_tag :place,options_for_select(@cities,id:"city_shower"),class:"selectpicker",:include_blank=>true%>
       </div>
       <br>
-      <%= submit_tag "ARA",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
-
+      <%= submit_tag "ARA",class:"btn3d btn btn-white btn-default" ,id:"submit"%>
       <%end%>
 
     </div>

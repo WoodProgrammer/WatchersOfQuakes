@@ -18,7 +18,7 @@ require 'mysql2'
   def hebele
     @like_keyword=Distance.search2(params[:place]).all
     @label=@like_keyword.first
-
+  
   #  @qk=Quake.where("place LIKE ?", @like_keyword)
     ##call methods from Sehirs methods.
   #  @x=Sehir.date_detector
