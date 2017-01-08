@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/i18n/defaults-*.min.js"></script>
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 
 <html>
 
@@ -8,35 +9,194 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+  <style>
+  body{ margin-top:20px;
+    background-color:rgb(68, 179, 234);
+  }
+  .glyphicon { margin-right:5px;}
+  .rating .glyphicon {font-size: 10px;}
+  .rating-num { margin-top:0px;font-size: 44px; }
+  .progress { margin-bottom: 5px;}
+  .progress-bar { text-align: left; }
+  .rating-desc .col-md-3 {padding-right: 0px;}
+  .sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+  .container{
+    margin-left: 0em;
+
+  }
+  .graph1{
+
+  }
+  .graph2{
+      margin-left: 50em;
+      margin-top: -35em;
+      margin-right: 12em;
+
+  }
+  #container2{
+    margin-left: 40em;
+    margin-top: -24em;
+    width: 585px;
+  }
+  .container{
+    margin-left: 40em;
+  }
+  #divler{
+    margin-left: 20em;
+    margin-top: -5em;
+
+  }
+  </style>
 <style>
   @import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css");
   #selector{
   }
   body{
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg/1920px-B%C3%BCy%C3%BCk_ve_K%C3%BC%C3%A7%C3%BCk_A%C4%9Fr%C4%B1_Da%C4%9F%C4%B1.jpg");
       background-repeat:no-repeat;
       background-size:cover;
     }
   #search-statistics{
-    margin-left: 40em;
-    margin-top: 20em;
+    margin-left: 1em;
+    margin-top: 2em;
   }
   #dep-label{
     color:white;
+  }
+  .graph2{
+      margin-left: 50em;
+      margin-top: -35em;
+      margin-right: 12em;
+
   }
 </style>
 <head>
 <body>
 <div id="search-statistics">
   <h1 id="dep-label">DEPREM ANALİZLERİ</h1>
+
+
   <%= form_tag("http://localhost:3000/interactive/hebele", :method => "get", id: "search-form") do %>
       <div id="selector">
-        <%= select_tag :place,options_for_select(@cities,id:"city_shower"),class:"selectpicker",:include_blank=>true%>
+        <%= select_tag :place,options_for_select(@cities,id:"city_shower"),class:"selectpicker",:include_blank=>false%>
       </div>
       <br>
       <%= submit_tag "ARA",class:"btn3d btn btn-white btn-default" ,id:"submit"%>
       <%end%>
 
+    </div>
+
+    <br>
+    <%i=0%>
+    <%i2=0%>
+    <%i3=0%>
+    <%i4=0%>
+    <%i5=0%>
+    <%@quakes.each do |x|%>
+      <%i+=1%>
+      <%if x.siddet>=5%>
+        <%i5+=1%>
+      <%end%>
+      <%if x.siddet<=4&&x.siddet>3.1%>
+        <%i4+=1%>
+      <%end%>
+
+      <%if x.siddet<=3&&x.siddet>2.1%>
+        <%i3+=1%>
+      <%end%>
+      <%if x.siddet<=2&&x.siddet>1.0%>
+        <%i2+=1%>
+      <%end%>
+    <%end%>
+    <%datas=[]%>
+    <%t=0%>
+    <%@quakes.each do |data|%>
+      <%datas.push(data.siddet)%>
+      <%t+=1%>
+    <%end%>
+<div id="divler">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-center">
+                          <h1 class="rating-num"><%="TÜRKİYE"%></h1>
+                            <h1 class="rating-num">
+                                <%="#{i}"%><h1>
+                            <div class="rating">
+                                <span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
+                                </span><span class="glyphicon glyphicon"></span><span class="glyphicon glyphicon">
+                                </span><span class="glyphicon glyphicon"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-md-6">
+                            <div class="row rating-desc">
+                                <div class="col-xs-3 col-md-3 text-right">
+                                    <span class="glyphicon glyphicon"></span>5
+                                </div>
+                                <div class="col-xs-8 col-md-9">
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:<%=i5%>%;">
+                                            <span class="sr-only"><%"#{i5}"%></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-md-3 text-right">
+                                    <span class="glyphicon glyphicon"></span>4
+                                </div>
+                                <div class="col-xs-8 col-md-9">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:<%=i4*10%>%">
+                                            <span class="sr-only"><%=i4%></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-md-3 text-right">
+                                    <span class="glyphicon glyphicon"></span>3
+                                </div>
+                                <div class="col-xs-8 col-md-9">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+                                            aria-valuemin="0" aria-valuemax="100" style="width:<%= i3*10 %>%">
+                                            <span class="sr-only"><%=i3%></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-md-3 text-right">
+                                    <span class="glyphicon glyphicon"></span>1 - 2
+                                </div>
+                                <div class="col-xs-8 col-md-9">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: <%= i2*10 %>%">
+                                            <span class="sr-only"><%="#{i2}"%></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <br>
+      <div class="well">
+
+            <p>
+                <H3 ><%="EN YÜKSEK DEPREM BÜYÜKLÜĞÜ #{datas.max} "%><H3>
+            </p>
+      </div>
+    </div>
+</div>
+    <div class="graph1">
+    <%= line_chart Quake.group_by_day(:date).count ,width: "600px", height: "500px" ,colors: ["#b00", "#666"],label: "Deprem Sayisi", xtitle: "Tarih",ytitle:"Deprem Sayısı",legend: "bottom"%>
+    </div>
+    <div class="graph2">
+    <%= area_chart  Quake.group_by_day(:date).maximum(:siddet),width: "720px", height: "500px" ,colors: ["#a11342", "white"],label: "Buyukluk", xtitle: "Tarih",ytitle:"Buyukluk",legend: "bottom" %>
     </div>
   </body>
 </html>

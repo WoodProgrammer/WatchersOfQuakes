@@ -13,7 +13,7 @@ require 'mysql2'
     @info_date2=Quake.first
     @quakes2 = Quake.limit(10)
     @cities=Distance.uniq.pluck(:city)
-    
+
   end
   def hebele
     @like_keyword=Distance.search2(params[:place]).all
