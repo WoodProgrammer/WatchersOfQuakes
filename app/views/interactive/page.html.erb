@@ -1,16 +1,37 @@
-<H1> <%="#{@like_keyword}"%>City Quake Graphics</H1>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <style>
+  @import url("http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css")
   #selector{
 
   }
+  body{
+    background-color:black;
+  }
+  #search-statistics{
+    margin-left: 40em;
+    margin-top: 20em;
 
+  }
+  #dep-label{
+    color:gray;
+  }
 </style>
-<%= form_tag("http://localhost:3000/interactive/hebele", :method => "get", id: "search-form") do %>
-  <div id="selector">
-    <%= select_tag :place,options_for_select(@cities,id:"city_shower"),:include_blank=>true%>
-  </div>
-  <br>
-  <%= submit_tag "Search",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
+<head>
+<body>
+<div id="search-statistics">
+  <h1 id="dep-label">DEPREM ANALİZLERİ</h1>
+  <%= form_tag("http://localhost:3000/interactive/hebele", :method => "get", id: "search-form") do %>
+      <div id="selector">
+        <%= select_tag :place,options_for_select(@cities,id:"city_shower"),:class=>"selectpicker",:include_blank=>true%>
+      </div>
+      <br>
+      <%= submit_tag "ARA",class:"btn3d btn btn-white btn-lg" ,id:"submit"%>
 
-<%end%>
+      <%end%>
+
+    </div>
+  </body>
+</html>
