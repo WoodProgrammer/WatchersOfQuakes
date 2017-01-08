@@ -1,45 +1,95 @@
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://www.jqueryscript.net/demo/Responsive-jQuery-News-Ticker-Plugin-with-Bootstrap-3-Bootstrap-News-Box/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
 
-<p id="search_link"> <%=link_to "SEARCH",searches_path%></p>
+<script>
 
+    $(function () {
+        $(".demo1").bootstrapNews({
+            newsPerPage: 3,
+            autoplay: true,
+    		pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+
+		$(".demo2").bootstrapNews({
+            newsPerPage: 4,
+            autoplay: true,
+			pauseOnHover: true,
+			navigation: false,
+            direction: 'down',
+            newsTickerInterval: 2500,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+
+        $("#demo3").bootstrapNews({
+            newsPerPage: 3,
+            autoplay: false,
+
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+    });
+
+</script>
 <style>
+body{
+  background-color:rgb(68, 179, 234);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+</style>
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading"> <span class="glyphicon"></span><b>SON DAKİKA DEPREMLER</b></div>
+<div class="panel-body">
+<div class="row">
+<div class="col-xs-12">
+<ul id="demo3" style="overflow-y: hidden; height: 210px;">
+  <%id=0%>
+  <%@x.each do |dep|%>
+    <div id="dep_info">
+      <h4 id ="news-item">Tarih:<%=dep.date%></h4>
+      <h4 id ="news-item">Yer:<%=dep.place%></h4>
+      <h4 id ="news-item">Büyüklük:<%=dep.siddet%></h4>
+      <h4 id ="news-item">Şehir:<%=dep.city%></h4>
+      <hr></hr>
+    </div>
+    <%id+=1%>
+    <%if id==10%>
+      <%break%>
+    <%end%>
 
-  @import url('https://fonts.googleapis.com/css?family=Bungee');
-  #header_1{
+  <%end%>
 
-  }
-  #dep{
-    color: white;
-    font-size: 20px;
-  }
-  #dep_info{
-    background-color: black;
-    width: 400px;
-  }
-  #search_link{
 
-  }
-  body{
-    background-color: #dee0e2;
+</ul>
+</div>
+</div>
+</div>
+<div class="panel-footer"> <ul class="pagination pull-right" style="margin: 0px;"><li><a href="#" class="prev"><span class="glyphicon glyphicon-chevron-down"></span></a></li><li><a href="#" class="next"><span class="glyphicon glyphicon-chevron-up"></span></a></li></ul><div class="clearfix"></div></div>
+</div>
+</div>
+</div>
+<style>
+  #buttons{
 
   }
 </style>
-<body>
-<%id=0%>
-<%@x.each do |dep|%>
-  <div id="dep_info">
-    <p id ="dep">Tarih:<%=dep.date%></p>
-    <p id ="dep">Yer:<%=dep.place%></p>
-    <p id ="dep">Büyüklük:<%=dep.siddet%></p>
-    <p id ="dep">Şehir:<%=dep.city%></p>
+<h1 style="font-size:60px;">TÜRKİYE DEPREMLERİ</h1>
 
-  </div>
-  <%id+=1%>
-  <%if id==10%>
-    <%break%>
-  <%end%>
+<div id="buttons">
+  <div class="btn-group">
+    <%= link_to "ARAMA", searches_path, :class => "btn btn-default btn-lg btn-block btn-huge"%>
 
-<%end%>
-</body>
+</div>
+<div class="btn-group">
+  <%= link_to "DATA ANALİZİ", interactive_page_path, :class => "btn btn-default btn-lg btn-block btn-huge"%>
+
+</div>
+</div>
