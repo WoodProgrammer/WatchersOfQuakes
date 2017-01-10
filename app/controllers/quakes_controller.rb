@@ -7,8 +7,11 @@ def index
       marker.lat quake.latitude
       marker.lng quake.longitude
       marker.infowindow quake.place
-
     end
+    @t=Quake.new
+    @t.asdfinder
+
+
 end
 def show
     @dep=Quake.find(params[:id])

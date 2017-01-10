@@ -17,6 +17,9 @@ gem 'sidekiq'
 gem 'morrisjs-rails', '~> 0.5.1.1'
 gem 'raphael-rails'
 gem 'groupdate'
+gem 'geoip', '~> 1.6', '>= 1.6.3'# Use jquery as the JavaScript library
+gem 'terminal-notifier', '~> 1.7', '>= 1.7.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
