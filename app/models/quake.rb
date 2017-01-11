@@ -15,8 +15,7 @@ client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abc
   def asdfinder
     g = GeoIP.new File.join(Rails.root, "db", "GeoLiteCity.dat")
     geodata = g.city("94.55.235.31")
-    city="TUNCELI"
-    #geodata[7]
+    city="GIRESUN"#geodata[7]
     i=0
     @quakes=Quake.all
     @quakes.each do |quake|
