@@ -76,8 +76,9 @@ h1{
   <%id=0%>
   <%@x.each do |dep|%>
     <div id="dep_info">
-      <h4 id ="news-item">Tarih:<%=dep.date%></h4>
+      <h4 style="color:red"id="news-item"><%="#{id+1} NUMARALI DEPREM "%></h4>
       <h4 id ="news-item">Yer:<%=dep.place%></h4>
+      <h4 id ="news-item">Tarih:<%=dep.date%></h4>
       <h4 id ="news-item">Büyüklük:<%=dep.siddet%></h4>
       <h4 id ="news-item">Şehir:<%=dep.city%></h4>
       <hr></hr>

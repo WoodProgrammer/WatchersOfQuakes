@@ -3,6 +3,9 @@ require 'date'
 class DB
   def look_date(fname)
     client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
+
+
+
     client.query("DELETE FROM quakes")
 
     date_file=File.open(fname,"r+")
