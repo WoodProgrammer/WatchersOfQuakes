@@ -5,10 +5,13 @@ Data Analyze,Virtualization and Searching system.Created by Ruby on Rails
   Ruby on Rails
   Rails version 5.0.0.1
   Ruby version 2.3.0
-
-# Database creation
-  MYSQL
-
-  Create your own database.yml file.
-
-#MacOS to terminal notification.
+ 
+# Configurations
+  1. Database creation
+   * MYSQL - Create your own database.yml file and then configure `app/models/quake.rb` file as your database configurations
+  2. Create Migrations `rails db:migrate`
+  
+  3. Edit Mysql `initializers/client.rb` file as your database configurations
+   
+  
+# MacOS to terminal notification.
