@@ -2,6 +2,7 @@ class Quake < ApplicationRecord
 require 'terminal-notifier'
 require 'date'
 gem "mysql2"
+@x=" "
 client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
   class <<self
     def search(city_name)
@@ -12,10 +13,11 @@ client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abc
     return dep
     end
   end
+
   def asdfinder
     g = GeoIP.new File.join(Rails.root, "db", "GeoLiteCity.dat")
     geodata = g.city("94.55.235.31")
-    city="GIRESUN"#geodata[7]
+    city=geodata[7]
     i=0
     @quakes=Quake.all
     @quakes.each do |quake|
@@ -25,9 +27,15 @@ client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abc
                                                 :subtitle => " DEPREM #{quake.place}")
 
                                                 i+=1
+
       else
+
       end
     end
   end
-end
+    if i==0
+      TerminalNotifier.notify(" BUGÜN #{city}'de DEPREM YOK ", :title => 'WATCHERS OF QUAKES')
+    end
+end#endof asdfinder
+
 end

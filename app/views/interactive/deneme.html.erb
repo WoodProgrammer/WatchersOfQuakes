@@ -1,0 +1,55 @@
+<style>
+#noty-holder{
+  width: 100%;
+  top: 0;
+  font-weight: bold;
+  z-index: 1031; /* Max Z-Index in Fixed Nav Menu is 1030*/
+  text-align: center;
+  position: fixed;
+}
+
+.alert{
+  margin-bottom: 2px;
+  border-radius: 0px;
+}
+
+#main{
+  min-height:900px;
+}
+
+body {
+padding-top: 50px;
+}
+.starter-template {
+padding: 40px 15px;
+text-align: center;
+}
+</style>
+
+<script>
+function createNoty(message, type) {
+    var html = '<div class="alert alert-' + type + ' alert-dismissable page-alert">';
+    html += '<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>';
+    html += message;
+    html += '</div>';
+    $(html).hide().prependTo('#noty-holder').slideDown();
+};
+
+$(function(){
+    createNoty('success', 'success');
+    $('.page-alert .close').click(function(e) {
+        e.preventDefault();
+        $(this).closest('.page-alert').slideUp();
+    });
+});
+</script>
+<div id="noty-holder"></div><!-- HERE IS WHERE THE NOTY WILL APPEAR-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          </button>
+        </div>
+
+      </div>
+    </nav>

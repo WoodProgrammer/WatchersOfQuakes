@@ -18,7 +18,7 @@ set :output, {:error => '~/Desktop/watchers_of_quakes_db.error.log', :standard =
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/parser.rb"
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/city_detection.rb"
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/distance.rb"
-
+    command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/id_man.rb"
  end
 
 # Learn more: http://github.com/javan/whenever
