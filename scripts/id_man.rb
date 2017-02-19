@@ -4,8 +4,7 @@ datas=client.query("SELECT * FROM QUAKES")
 city_names=client.query("SELECT * FROM sehirs")
 
 city_names.each do |city|
-  puts city['sehir_isim']
-  puts city['id']
+
   x=city['sehir_isim'].to_s
   y=city['id'].to_i
   client.query("UPDATE quakes SET city_id=#{y} WHERE city LIKE '%#{x}%'  ")

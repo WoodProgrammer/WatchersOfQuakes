@@ -24,10 +24,23 @@ class <<self
             client.query("update quakes set city='YURDISI VE DENIZLER' where place LIKE '%#{ place["place"]}%'")
         end
       end
-
-
     end
+
+  end
+end
+
+def  id_man
+  client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
+  datas=client.query("SELECT * FROM QUAKES")
+  city_names=client.query("SELECT * FROM sehirs")
+
+  city_names.each do |city|
+
+    x=city['sehir_isim'].to_s
+    y=city['id'].to_i
+    client.query("UPDATE quakes SET city_id=#{y} WHERE city LIKE '%#{x}%'  ")
   end
 end
 
 City_Detection.city_detector
+id_man()

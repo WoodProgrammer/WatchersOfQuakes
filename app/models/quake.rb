@@ -1,12 +1,10 @@
 class Quake < ApplicationRecord
 require 'terminal-notifier'
 require 'date'
-<<<<<<< HEAD
 gem "mysql2"
 @x=" "
 client = Mysql2::Client.new(:host=>"localhost",:username=>"root",:password=>"abcde",:database=>"watchers_of_quakes_development")
-=======
->>>>>>> 3e094cbfd51fdf1c48dedf1c930df6d1624bf0d0
+
   class <<self
     def search(city_name)
   #  quake=Quake.all
