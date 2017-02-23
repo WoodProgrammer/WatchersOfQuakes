@@ -40,6 +40,7 @@ def  id_man
     y=city['id'].to_i
     client.query("UPDATE quakes SET city_id=#{y} WHERE city LIKE '%#{x}%'  ")
   end
+    client.query("UPDATE quakes SET city_id = 99 WHERE city LIKE '%YURDISI VE DENIZLER%'")
 end
 
 City_Detection.city_detector
