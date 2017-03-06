@@ -2,7 +2,7 @@
 #
 # It's helpful, but not entirely necessary to understand cron before proceeding.
 # http://en.wikipedia.org/wiki/Cron
-set :output, {:error => '~/Desktop/watchers_of_quakes_db.error.log', :standard => '~/Desktop/watchers_of_quakes_db.standard.log'}
+set :output, {:error => '~/Desktop/logs/watchers_of_quakes_db.error.log', :standard => '~/Desktop/logs/watchers_of_quakes_db.standard.log'}
 
 # Example:
 #
@@ -14,7 +14,7 @@ set :output, {:error => '~/Desktop/watchers_of_quakes_db.error.log', :standard =
 #   rake "some:great:rake:task"
 # end
 #
- every 1.minute do
+ every 1.5.minute do
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/parser.rb"
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/city_detection.rb"
     command "ruby /Users/emirozbir/Desktop/ruby/watchers_of_quakes/scripts/distance.rb"
